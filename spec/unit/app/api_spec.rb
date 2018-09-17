@@ -13,6 +13,19 @@ module ExpenseTracker
 
     let(:ledger) { instance_double('ExpenseTracker::Ledger') }
 
+
+    describe 'GET /expenses/:date' do
+      context 'when expenses exist on the given date' do
+        it 'returns the expense records as JSON'
+        it 'responds with a 200 (OK)'
+      end
+
+      context 'when there are no expenses on the given date' do
+        it 'returns an empty array as JSON'
+        it 'responds with a 200 (OK)'
+      end 
+    end
+
     describe 'POST /expenses' do
       context 'when the expense is successfully recorded' do
         let(:expense) { { 'some' => 'data' } }
