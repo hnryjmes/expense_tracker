@@ -21,7 +21,7 @@ module ExpenseTracker
 
     it 'records submitted expenses' do
       pending 'Need to persist expenses'
-      
+
       coffee = post_expense(
         'payee'  => 'Starbucks',
         'amount' => 5.75,
